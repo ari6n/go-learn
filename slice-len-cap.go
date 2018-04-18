@@ -17,6 +17,10 @@ func main() {
 	// Drop its first two values.
 	s = s[2:]
 	printSlice(s)
+
+	// Restore rest 2 elements
+	s = s[:4]
+	printSlice(s)
 }
 
 func printSlice(s []int) {
