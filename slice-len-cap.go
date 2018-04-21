@@ -21,6 +21,10 @@ func main() {
 	// Restore rest 2 elements
 	s = s[:4]
 	printSlice(s)
+
+	// New elements could be added to slice
+	s = append(s, 17, 19)
+	printSlice(s)
 }
 
 func printSlice(s []int) {
